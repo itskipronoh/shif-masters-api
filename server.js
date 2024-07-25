@@ -20,10 +20,9 @@ app.use(cookieParser());
 
 app.use('/api/users', userRoutes);
 
-  app.get('/', (req, res) => {
-    res.send('API is running....');
-  });
-
+app.get('/', (req, res) => {
+  res.send('API is running....');
+});
 
 app.use(notFound);
 app.use(errorHandler);
